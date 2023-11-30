@@ -2,9 +2,9 @@ function fetchFact() {
     fetch('https://catfact.ninja/fact?max_length=100&limit=3')
         .then((response) => {
             return response.json();
-    }).then(fact => {
-        displayCatFact(fact)
-    });
+        }).then(fact => {
+            displayCatFact(fact)
+        });
 } 
 
 function displayCatFact(catFact) {
