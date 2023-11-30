@@ -1,12 +1,12 @@
-const baseUrl ='https://catfact.ninja';
+const factUrl ='https://catfact.ninja';
 
 const fetchFact= async () => {
-	const response = await fetch(baseUrl + '/fact?max_length=140');
+	const response = await fetch(factUrl + '/fact?max_length=140');
     const fact = await response.json();
-	displayCatFacts(fact);
+	displayCatFact(fact);
 }
 
-function displayCatFacts(catFact) {
+function displayCatFact(catFact) {
     var container = document.getElementById('cat-fact-container');
 
     var paragraph = document.createElement('p');
