@@ -1,17 +1,17 @@
-const factUrl ='https://catfact.ninja';
-
-const fetchFact= async () => {
-	const response = await fetch(factUrl + '/fact?max_length=140');
-    const fact = await response.json();
-	displayCatFact(fact);
-}
+function fetchFact() {
+    fetch('https://catfact.ninja/fact?max_length=100&limit=3')
+        .then((response) => {
+            return response.json();
+    }).then(fact => {
+        displayCatFact(fact)
+    });
+} 
 
 function displayCatFact(catFact) {
-    var container = document.getElementById('cat-fact-container');
-
-    var paragraph = document.createElement('p');
-    paragraph.textContent = catFact.fact; 
-    container.appendChild(paragraph);
+  const container = document.getElementById('cat-fact-container');
+  const paragraph = document.createElement('p');
+  paragraph.textContent = catFact.fact; 
+  container.appendChild(paragraph);
 }
 
 fetchFact();
