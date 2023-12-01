@@ -8,10 +8,12 @@ function fetchFact() {
 } 
 
 function displayCatFact(catFact) {
-  const container = document.getElementById('cat-fact-container');
+  const container = document.getElementById('catFactContainer');
   const paragraph = document.createElement('p');
-  paragraph.textContent = catFact.fact; 
+  paragraph.textContent = catFact.fact;
+  container.replaceChildren(); 
   container.appendChild(paragraph);
 }
 
 fetchFact();
+

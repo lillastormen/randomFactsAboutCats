@@ -4,9 +4,11 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="styles.css"/>  
-        <script src="facts.js"></script>
-        <script src="pictures.js"></script>
+        <link rel="stylesheet" href="../CSS/styles.css"/>  
+        <link rel="stylesheet" href="../CSS/variables.css"/>
+        <script src="../JS/button.js"></script>
+        <script src="../JS/pictures.js"></script>
+        <script src="../JS/facts.js"></script>
        
         <title>Random facts about cats</title>
        
@@ -17,19 +19,20 @@
     <body>
         <section class="catFactSection">
             <h1>Facts</h1>
-            <div id="cat-fact-container"></div>
+            <div id="catFactContainer"></div>
         </section>
 
-        <section class="catPicutreSection">
+        <section class="catPictureSection">
             <h1>Pictures</h1>
-            <div id="cat-picture-container"></div>
+            <div id="catPictureContainer"></div>
         </section>
 
-        <section class="loaderRing">
+        <section class="loaderSection">
             <h1>Loader</h1>
             <div class="loader"></div>
         </section>
 
+        <button type="button" class="refreshButton" onclick="fetchPicture(), fetchFact()">Refresh</button>
 
         
    
