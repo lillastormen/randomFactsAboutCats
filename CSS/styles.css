@@ -8,23 +8,27 @@ img {
   height: 100%;
 }
 
-.loaderSection {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 20vh; 
-}
+#loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ea1d1d;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: none;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
 
-.loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+  /* Selecting using both id and class - otherwise id selector overwrites the class. ID has precedence over class! */
+  #loader.showLoader {
+    display: inline-block;
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
   }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
