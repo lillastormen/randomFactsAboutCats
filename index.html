@@ -13,24 +13,36 @@
 
 
     <body>
-        <section class="catFactSection">
-            <h1>Facts</h1>
-            <div id="catFactContainer"></div>
+        
+        <section class="container">
+        
+            <header>
+                <h1>Cats' Kingdom</h1>
+            </header>
+
+            <section class="catFactSection">
+                <h1>Facts</h1>
+                <div id="catFactContainer"></div>
+            </section>
+
+            <section class="loaderSection">
+                <h1>Loader</h1>
+                <div id="loader"></div>
+            </section>
+
+            <section class="catPictureSection">
+                <h1>Pictures</h1>
+                <div id="catPictureContainer"></div>
+            </section>
+
+            <button type="button" class="refreshButton" onclick="fetchPicture(), fetchFact()">Meow!</button>
+
+            <footer class="footer"></footer>
         </section>
-
-        <section class="catPictureSection">
-            <h1>Pictures</h1>
-            <div id="catPictureContainer"></div>
-        </section>
-
-        <section class="loaderSection">
-            <h1>Loader</h1>
-            <div id="loader"></div>
-        </section>
-
-        <button type="button" class="refreshButton" onclick="fetchPicture(), fetchFact()">Meow!</button>
-
+    
     </body>
+    
     <script src="../JS/pictures.js"></script>
     <script src="../JS/facts.js"></script>
+
 </html>
