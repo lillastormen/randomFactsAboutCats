@@ -4,7 +4,7 @@
     font-family: Roboto;
 }
 
-p, h1, h3 {
+p, h3 {
     color: var(--timberwolf);
 }
 

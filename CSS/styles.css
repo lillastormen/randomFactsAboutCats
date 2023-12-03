@@ -80,19 +80,16 @@ img {
   
   @keyframes color-change {
     0% { 
-      color: var(--timberwolf); 
-    }
-    25% { 
       color: var(--indian-red); 
     }
-    50% { 
+    33% { 
       color: var(--onyx); 
     }
-    75% {
+    66% {
       color: var(--rich-black);
     }
     100% { 
-      color: var(--timberwolf); 
+      color: var(--indian-red); 
     }
   }
 
