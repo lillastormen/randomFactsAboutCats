@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   background-color: var(--gunmetal);
+  padding: var(--padding);
 }
 
 #catPictureContainer {
@@ -14,9 +15,9 @@ img {
 }
 
 #loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #ea1d1d;
+  width: 75px;
+  height: 75px;
+  border: 10px solid var(--indian-red);
   border-bottom-color: transparent;
   border-radius: 50%;
   display: none;
@@ -34,11 +35,16 @@ img {
     top:50%;
     background-color: var(--rich-black);
     color: var(--timberwolf);
-    border: 1px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px 2px var(--gunmetal); 
-    height: 45px;
+    border: 2px;
+    border-radius: 25px;
+    height: 55px;
     width: 150px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--indian-red);
   }
 
   @keyframes rotation {
