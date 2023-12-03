@@ -9,8 +9,7 @@
       "catFactSection catFactSection"
       "loaderSection loaderSection"
       "catPictureSection catPictureSection"
-      "refreshButton refreshButton"
-      "footer footer";
+      "refreshButton refreshButton";
       max-width: 100vw;
       width: 100%;
       margin: 0 auto;
@@ -36,7 +35,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-  
   }
   
   .catPictureSection {
@@ -51,9 +49,24 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    padding-bottom: 50px;
   }
   
-  .footer {
-    grid-area: footer;
+  @media (max-width: 800px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: 
+        "header"
+        "catFactSection"
+        "loaderSection"
+        "catPictureSection"
+        "refreshButton";
+        max-width: 100vw;
+        width: 100%;
+        margin: 0 auto;
+    }
   }

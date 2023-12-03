@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="../CSS/styles.css"/>  
         <link rel="stylesheet" href="../CSS/variables.css"/>
         <link rel="stylesheet" href="../CSS/fonts.css"/>
-       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+        
         <title>Random facts about cats</title>
        
     </head>
@@ -23,7 +25,10 @@
             </header>
 
             <section class="catFactSection">
-                <p>Meow to get to know something new about your cat!</p>
+                <h3>Meow to get to know something new about your cat!</h3>
+                <div class="catIcon">
+                    <div class="material-symbols-outlined">pets</div>
+                </div>
                 <div id="catFactContainer"></div>
             </section>
 
@@ -38,8 +43,6 @@
             <section class="refreshButton">
                 <button type="button" onclick="fetchPicture(), fetchFact()">Meow!</button>
             </section>
-
-            <footer class="footer"></footer>
         </section>
     
     </body>
