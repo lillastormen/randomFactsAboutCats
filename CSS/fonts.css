@@ -4,10 +4,6 @@
     font-family: Roboto;
 }
 
-h1, h2 {
-    color: var(--timberwolf);
-}
-
-p {
+p, h1, h3 {
     color: var(--timberwolf);
 }
