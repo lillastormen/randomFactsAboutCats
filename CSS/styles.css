@@ -1,6 +1,5 @@
-
-
 * {
+  box-sizing: border-box;
   background-color: var(--gunmetal);
 }
 
@@ -28,6 +27,18 @@ img {
   /* Selecting using both id and class - otherwise id selector overwrites the class. ID has precedence over class! */
   #loader.showLoader {
     display: inline-block;
+  }
+
+  button {
+    position: relative;
+    top:50%;
+    background-color: var(--rich-black);
+    color: var(--timberwolf);
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px var(--gunmetal); 
+    height: 45px;
+    width: 150px;
   }
 
   @keyframes rotation {

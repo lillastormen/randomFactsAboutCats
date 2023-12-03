@@ -20,7 +20,7 @@
     grid-area: header;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   
@@ -48,6 +48,10 @@
   
   .refreshButton {
     grid-area: refreshButton;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
   }
   
   .footer {
